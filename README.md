@@ -320,7 +320,7 @@ These principles help in:
 
 ## 🔗 Links
 
-* 🎓 [Udemy Course – Master Object-Oriented Design for LLD Interviews](https://www.udemy.com/share/10c6GX3@RIK5zdqMcdlA-DBmr2VVpeTTrWWuzmFMWWJ_JmNFjv-KObcoxxJ7rURDTH6o69ahMQ==/)
+* 🎓 [Udemy Course – Low Level System Design, Design Patterns & SOLID Principles](https://www.udemy.com/share/10c6GX3@RIK5zdqMcdlA-DBmr2VVpeTTrWWuzmFMWWJ_JmNFjv-KObcoxxJ7rURDTH6o69ahMQ==/)
 * 📝 [My detailed OOPS Notes](https://github.com/arey-pranay/OOPS_InterviewPrep/blob/main/README.md)
 ---
 
