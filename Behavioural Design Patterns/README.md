@@ -171,6 +171,33 @@ class RemoteControl {
 
 ## 🧬 4. Template Method Pattern
 
+**Definition**: Defines the skeleton of an algorithm in a base class and lets subclasses override specific steps of the algorithm.
+
+**Use Case**: Code reuse with variations, document rendering, data parsers.
+
+**Java Example**:
+
+```java
+abstract class Game {
+    abstract void initialize();
+    abstract void play();
+    abstract void end();
+
+    // Template method
+    public final void playGame() {
+        initialize();
+        play();
+        end();
+    }
+}
+
+class Chess extends Game {
+    void initialize() { System.out.println("Chess Initialized"); }
+    void play() { System.out.println("Playing Chess"); }
+    void end() { System.out.println("Game Over"); }
+}
+```
+
 **📌 Intent**: Define a fixed algorithm structure and allow subclasses to override certain steps.
 
 **🧠 When to Use**:
@@ -184,6 +211,22 @@ class RemoteControl {
 ---
 
 ## 🔄 5. Iterator Pattern
+
+**Definition**: Provides a way to access elements of a collection sequentially without exposing its underlying representation.
+
+**Use Case**: Custom collections, abstract data traversal.
+
+**Java Example**:
+
+```java
+class NameRepository {
+    private String[] names = {"Alice", "Bob", "Charlie"};
+
+    public Iterator<String> getIterator() {
+        return Arrays.asList(names).iterator();
+    }
+}
+```
 
 **📌 Intent**: Provide a standard way to access elements of a collection sequentially.
 
@@ -199,6 +242,42 @@ class RemoteControl {
 
 ## 🌀 6. State Pattern
 
+**Definition**: Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
+**Use Case**: Finite state machines (vending machines, UI buttons).
+
+**Java Example**:
+
+```java
+interface State {
+    void handle();
+}
+
+class OnState implements State {
+    public void handle() {
+        System.out.println("Light is ON");
+    }
+}
+
+class OffState implements State {
+    public void handle() {
+        System.out.println("Light is OFF");
+    }
+}
+
+class Context {
+    private State state;
+
+    void setState(State state) {
+        this.state = state;
+    }
+
+    void request() {
+        state.handle();
+    }
+}
+```
+
 **📌 Intent**: Allow an object to change its behavior when its internal state changes.
 
 **🧠 When to Use**:
@@ -213,6 +292,57 @@ class RemoteControl {
 
 ## 🧭 7. Mediator Pattern
 
+**Definition**: Defines an object that encapsulates how a set of objects interact. Promotes loose coupling by preventing objects from referring to each other directly.
+
+**Use Case**: Chat applications, form components communication.
+
+**Java Example**:
+
+```java
+interface Mediator {
+    void sendMessage(String message, Colleague colleague);
+}
+
+abstract class Colleague {
+    protected Mediator mediator;
+    Colleague(Mediator mediator) { this.mediator = mediator; }
+    abstract void receive(String message);
+}
+
+class User extends Colleague {
+    private String name;
+
+    User(Mediator mediator, String name) {
+        super(mediator);
+        this.name = name;
+    }
+
+    void send(String message) {
+        mediator.sendMessage(message, this);
+    }
+
+    void receive(String message) {
+        System.out.println(name + " got message: " + message);
+    }
+}
+
+class ChatRoom implements Mediator {
+    private List<Colleague> users = new ArrayList<>();
+
+    void addUser(Colleague user) {
+        users.add(user);
+    }
+
+    public void sendMessage(String message, Colleague sender) {
+        for (Colleague user : users) {
+            if (user != sender) {
+                user.receive(message);
+            }
+        }
+    }
+}
+```
+
 **📌 Intent**: Encapsulate object interactions in a mediator so objects don’t communicate directly.
 
 **🧠 When to Use**:
@@ -226,6 +356,58 @@ class RemoteControl {
 ---
 
 ## 🧠 8. Memento Pattern
+
+**Definition**: Captures and externalizes an object’s internal state so it can be restored later, without violating encapsulation.
+
+**Use Case**: Undo/redo functionality, version history.
+
+**Java Example**:
+
+```java
+class Memento {
+    private String state;
+
+    public Memento(String state) {
+        this.state = state;
+    }
+
+    public String getState() {
+        return state;
+    }
+}
+
+class Originator {
+    private String state;
+
+    void setState(String state) {
+        this.state = state;
+    }
+
+    Memento saveState() {
+        return new Memento(state);
+    }
+
+    void restoreState(Memento m) {
+        this.state = m.getState();
+    }
+
+    void showState() {
+        System.out.println("Current State: " + state);
+    }
+}
+
+class Caretaker {
+    private List<Memento> history = new ArrayList<>();
+
+    void addMemento(Memento m) {
+        history.add(m);
+    }
+
+    Memento getMemento(int index) {
+        return history.get(index);
+    }
+}
+```
 
 **📌 Intent**: Capture and restore an object's internal state without violating encapsulation.
 
