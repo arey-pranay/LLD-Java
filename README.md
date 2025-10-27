@@ -1,7 +1,7 @@
 # 📘 Low-Level System Design Basics – OOP & SOLID Principles
 
 Understanding **Object-Oriented Programming (OOP)** and the **SOLID principles** is a non-negotiable step for excelling in **Low-Level System Design (LLD)**. These principles help build scalable, maintainable, and reusable systems — crucial for LLD interviews and real-world system architecture.
-[Course Repository](https://github.com/prateek27/design-patterns-java/tree/main)
+
 ---
 
 ## 🔷 Object-Oriented Programming (OOP)
@@ -322,6 +322,7 @@ These principles help in:
 
 * 🎓 [Udemy Course – Low Level System Design, Design Patterns & SOLID Principles](https://www.udemy.com/share/10c6GX3@RIK5zdqMcdlA-DBmr2VVpeTTrWWuzmFMWWJ_JmNFjv-KObcoxxJ7rURDTH6o69ahMQ==/)
 * 📝 [My detailed OOPS Notes](https://github.com/arey-pranay/OOPS_InterviewPrep/blob/main/README.md)
+* 👍🏼 [Course Repository](https://github.com/prateek27/design-patterns-java/tree/main)
 ---
 
 **Happy Designing! 🧠**
