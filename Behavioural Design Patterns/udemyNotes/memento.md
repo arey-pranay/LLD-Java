@@ -35,3 +35,6 @@ This separation ensures that the TextEditor focuses solely on editing while the 
 
 ## Conclusion
 By using the Memento Pattern in applications requiring state management, we can enhance maintainability, flexibility, and adhere to software design principles efficiently.
+
+<img width="1164" height="827" alt="Memento_Pattern (1)" src="https://github.com/user-attachments/assets/12e0990b-03b8-42be-8af3-3a9c402b9231" />
+
