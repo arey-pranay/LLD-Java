@@ -48,3 +48,8 @@ When a user makes a purchase:
 
 This modular approach ensures **flexibility** and **maintainability**, allowing businesses to adapt to new payment methods as they arise without disrupting existing functionalities.  
 Additionally, the clean separation of concerns improves overall system design.
+
+--- 
+
+<img width="1455" height="826" alt="Strategy_Pattern" src="https://github.com/user-attachments/assets/fe35ff1c-b33e-499a-be34-8e60970ed307" />
+
