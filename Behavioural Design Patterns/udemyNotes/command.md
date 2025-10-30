@@ -78,8 +78,6 @@ By applying the **Command Pattern**, the system:
 * Adheres to the **Single Responsibility Principle**
 * Improves overall **code maintainability** and **scalability**
 
----
+<img width="1380" height="1062" alt="Command_Pattern" src="https://github.com/user-attachments/assets/0bbb5019-e0b2-4db3-8ce9-a05dcd85c138" />
 
 
-
-Would you like me to convert it into a **README.md** file structure (with table of contents, syntax highlighting, etc.)?
