@@ -49,4 +49,12 @@ This shows how using the Singleton Pattern effectively solves the problem of mul
 
 
 
+By overriding the clone() method in your Singleton class and throwing a CloneNotSupportedException, you effectively prevent any attempts to create additional instances of that class. This approach aligns with the fundamental goal of the Singleton Pattern, which is to ensure that only one instance exists throughout the application.
+```
+ @Override
+    protected Object clone() throws CloneNotSupportedException {
+        throw new CloneNotSupportedException("Cloning of Singleton is not allowed");
+    }
+```
+
 <img width="1166" height="827" alt="Singleton_Pattern" src="https://github.com/user-attachments/assets/6f069356-1963-421d-a346-af99a7d01038" />
