@@ -112,5 +112,5 @@ This pattern is particularly useful in frameworks and libraries where multiple p
 The Abstract Factory Pattern simplifies the introduction of new product families and ensures consistency within the system architecture.
 
 ---
+<img width="1652" height="873" alt="Abstract_Factory" src="https://github.com/user-attachments/assets/39aea4d1-d7cb-4ce8-9e1a-e625847ce946" />
 
-This format should be clear and structured for easy understanding. Let me know if you need any adjustments!
