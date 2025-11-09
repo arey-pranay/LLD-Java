@@ -21,6 +21,9 @@ The **Proxy Pattern** addresses these issues by introducing a **proxy** class th
 
 Imagine a service that handles the loading and display of images. Given that image loading can be a **resource-heavy** operation, it’s inefficient to load all images at once. Instead, we can use the **Proxy Pattern** to load images only when they are actually displayed.
 
+<img width="692" height="373" alt="image" src="https://github.com/user-attachments/assets/2bb94e12-78c6-4580-b809-429b8f3f7c93" />
+
+
 ---
 
 ### **Code Implementation**
@@ -129,4 +132,5 @@ The **Proxy Pattern** is an effective way to **manage resource-intensive operati
 This pattern ensures that your application remains responsive and efficient by delaying the loading of resources until they are actually needed.
 
 <img width="1166" height="826" alt="Proxy_Pattern" src="https://github.com/user-attachments/assets/c1c51bde-da0a-46d9-a7a0-f8fefc500929" />
+
 
