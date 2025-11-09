@@ -141,3 +141,6 @@ Margherita Pizza, Cheese, Olives Cost: $10.25
 ### **Conclusion**
 
 The **Decorator Pattern** is an effective way to enhance or modify the behavior of an object without changing its core structure. It allows you to add functionalities dynamically and avoid the drawbacks of subclassing, such as class explosion and rigid code.
+
+<img width="1239" height="873" alt="Decorator_Pattern" src="https://github.com/user-attachments/assets/8e476c43-1b2d-4cc1-8627-001a5843a344" />
+
