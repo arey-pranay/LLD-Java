@@ -202,6 +202,9 @@ public class VisitorPatternDemo {
 * The **Visitor** pattern allows new operations (like `PriceVisitor`) to be added to existing objects (like `Book` and `Magazine`) without modifying their structure.
 * The **accept** method in each element class (like `Book` and `Magazine`) allows the visitor to perform operations on the object.
 
+<img width="1671" height="994" alt="image" src="https://github.com/user-attachments/assets/000fa372-ef2f-4eb8-bea4-f2d39dd11c72" />
+
+
 ---
 
 ### 3. **Chain of Responsibility Pattern**
